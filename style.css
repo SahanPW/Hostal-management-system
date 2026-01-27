@@ -1,0 +1,796 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.15);
+    --glass-border: rgba(255, 255, 255, 0.25);
+    --accent: #00f2fe;
+    --accent-dark: #4facfe;
+    --danger: #ff6b6b;
+    --text-light: #ffffff;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.glass-bg {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("images/hostel-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass-bg1 {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("images/H-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo2{
+     position: absolute;
+    top: 30%;
+    right: 860px;
+}
+.logo2 h2{
+    padding-top: 15px;
+    padding-right: -15px;
+     color: white;
+     font-size: 30px;
+     
+     
+}
+.logo2-size{
+    width: 250px;
+   
+}
+
+.border{
+     width: 1060px;
+     height: 350px;
+    border-radius: 18px;
+    border: 1px solid;
+    border-color: white;
+}
+.border1{
+     width: 1060px;
+     height: 620px;
+    border-radius: 18px;
+    border: 1px solid;
+    border-color: white;
+}
+
+
+.auth-box {
+    position: absolute;
+    top: 25%;
+    right: 350px;
+    width: 460px;
+    padding: 35px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    border: 1px solid var(--glass-border);
+    color: var(--text-light);
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    animation: fadeUp 0.6s ease;
+    
+         /* space from right edge */
+    
+}
+
+
+.auth-box h1 {
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.auth-box p {
+    opacity: 0.85;
+    margin-bottom: 20px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 13px;
+    margin-top: 14px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: rgba(255,255,255,0.25);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.auth-box input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.auth-box input:focus {
+    border-color: var(--accent);
+    background: rgba(255,255,255,0.35);
+}
+
+.auth-box button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+.auth-box2 {
+    position: absolute;
+    top: 14%;
+    right: 300px;
+    width: 460px;
+    padding: 20px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    border: 1px solid var(--glass-border);
+    color: var(--text-light);
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    animation: fadeUp 0.6s ease;
+    
+         /* space from right edge */
+    
+}
+
+
+.auth-box2 h1 {
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.auth-box2 p {
+    opacity: 0.85;
+    margin-bottom: 20px;
+}
+
+.auth-box2 input {
+    width: 100%;
+    padding: 13px;
+    margin-top: 14px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: rgba(255,255,255,0.25);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.auth-box2 input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.auth-box2 input:focus {
+    border-color: var(--accent);
+    background: rgba(255,255,255,0.35);
+}
+
+.auth-box2 button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-box2 button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.logo3{
+     position: absolute;
+    top: 25%;
+    right: 860px;
+}
+.logo3 h2{
+    padding-top: 15px;
+    padding-right: -15px;
+     color: white;
+     font-size: 30px;
+     
+     
+}
+.logo3-size{
+    width: 300px;
+   
+}
+.switch {
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.switch a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.error {
+    color: var(--danger);
+    font-size: 14px;
+    margin-top: 10px;
+    animation: shake 0.4s;
+}
+
+
+.layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.sidebar {
+    width: 240px;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(px);
+    padding: 25px 15px;
+    color: white;
+    border-right: 1px solid rgba(167, 128, 128, 0.15);
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sidebar li.active {
+    background: linear-gradient(135deg, #788486, #8eb0b4);
+    color: #000;
+    font-weight: 600;
+    box-shadow: 0 6px 15px rgba(102, 109, 110, 0.4);
+}
+
+.sidebar li:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateX(6px);
+    
+}
+
+
+.content {
+    flex: 1;
+    padding: 35px;
+    color: var(--text-light);
+    overflow-y: auto;
+}
+
+
+.section {
+    display: none;
+    animation: fadeUp 0.4s ease;
+}
+
+.section.active {
+    display: block;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 50px;
+    margin-top: 5px;
+}
+
+.card {
+
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+    padding: 80px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+
+table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+}
+
+th {
+    background: rgba(255,255,255,0.25);
+    font-weight: 600;
+}
+
+tr {
+    transition: 0.3s;
+}
+
+tr:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+
+input, textarea, select {
+    background: rgba(255,255,255,0.25);
+    border: 1px solid transparent;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--accent);
+    background: rgba(255,255,255,0.35);
+}
+
+.btn-danger {
+    background: var(--danger);
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
+    100% { transform: translateX(0); }
+}
+
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .sidebar ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    .sidebar li {
+        white-space: nowrap;
+    }
+}
+
+
+.logo-container {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.logo {
+    width: 120px;
+}
+/* Room Slider Styles */
+.rooms-slider-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.slider-title {
+    font-size: 24px;
+    color: var(--accent);
+}
+
+.slider-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.slider-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.slider-btn:hover {
+    background: var(--accent);
+    color: #000;
+    transform: scale(1.1);
+}
+
+.rooms-slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) rgba(255, 255, 255, 0.1);
+}
+
+.rooms-slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+.rooms-slider::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.rooms-slider::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+.room-card {
+    min-width: 180px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.room-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+}
+
+.room-card.available::before {
+    background: #00b894; /* Green for available */
+}
+
+.room-card.occupied::before {
+    background: #e17055; /* Red for occupied */
+}
+
+.room-card.maintenance::before {
+    background: #fdcb6e; /* Yellow for maintenance */
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.room-number {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-light);
+}
+
+.room-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.status-available {
+    background: rgba(0, 184, 148, 0.2);
+    color: #00b894;
+    border: 1px solid rgba(0, 184, 148, 0.3);
+}
+
+.status-occupied {
+    background: rgba(225, 112, 85, 0.2);
+    color: #e17055;
+    border: 1px solid rgba(225, 112, 85, 0.3);
+}
+
+.status-maintenance {
+    background: rgba(253, 203, 110, 0.2);
+    color: #fdcb6e;
+    border: 1px solid rgba(253, 203, 110, 0.3);
+}
+
+.room-details {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.room-occupancy {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.occupancy-bar {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.occupancy-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.occupancy-low {
+    background: #00b894; /* Green for low occupancy */
+}
+
+.occupancy-medium {
+    background: #fdcb6e; /* Yellow for medium occupancy */
+}
+
+.occupancy-high {
+    background: #e17055; /* Red for high occupancy */
+}
+
+.room-actions {
+    margin-top: 15px;
+}
+
+.action-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+
+.action-btn:hover {
+    background: var(--accent);
+    color: #000;
+}
+
+/* Floor Filter */
+.floor-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+}
+
+/* Statistics Bar */
+.rooms-statistics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.stat-available {
+    color: #00b894;
+}
+
+.stat-occupied {
+    color: #e17055;
+}
+
+.stat-maintenance {
+    color: #fdcb6e;
+}
+
+.stat-vacant {
+    color: #4facfe;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .room-card {
+        min-width: 160px;
+    }
+    
+    .rooms-statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .slider-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .room-card {
+        min-width: 140px;
+        padding: 15px;
+    }
+    
+    .rooms-statistics {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Add to style.css */
+.complaint-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.status-pending {
+    background: rgba(253, 203, 110, 0.2);
+    color: #fdcb6e;
+    border: 1px solid rgba(253, 203, 110, 0.3);
+}
+
+.status-in-progress {
+    background: rgba(0, 184, 148, 0.2);
+    color: #00b894;
+    border: 1px solid rgba(0, 184, 148, 0.3);
+}
+
+.status-resolved {
+    background: rgba(79, 172, 254, 0.2);
+    color: #4facfe;
+    border: 1px solid rgba(79, 172, 254, 0.3);
+}
+
+.complaint-item {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.complaint-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.complaint-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.complaint-date {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 5px;
+}

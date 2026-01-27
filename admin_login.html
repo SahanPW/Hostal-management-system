@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Login - UniNest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="glass-bg">
+<div class="logo2">
+    <img src="images/lo.png" class="logo2-size">
+    <h2>University of Vavuniya</h2>
+</div>
+<div class="border1">
+<div class="auth-box">
+    <h1>Admin Panel</h1>
+    <p>UniNest Hostel Management System</p>
+
+    <form id="adminLoginForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <p class="error" id="loginError"></p>
+        <button type="submit">Login as Admin</button>
+    </form>
+
+    <p class="switch">
+        <a href="index.html">Student Login</a>
+    </p>
+</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const adminLoginForm = document.getElementById("adminLoginForm");
+    if (adminLoginForm) {
+        adminLoginForm.addEventListener("submit", async e => {
+            e.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const err = document.getElementById("loginError");
+
+            if (!username || !password) {
+                err.textContent = "All fields are required";
+                return;
+            }
+
+            try {
+                const response = await fetch('auth/admin_login.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        username: username,
+                        password: password
+                    })
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    window.location.href = data.redirect;
+                } else {
+                    err.textContent = data.message;
+                }
+            } catch (error) {
+                err.textContent = "Network error. Please try again.";
+            }
+        });
+    }
+});
+</script>
+<script src="script.js"></script>
+</body>
+</html>
